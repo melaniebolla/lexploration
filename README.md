@@ -1,1 +1,2 @@
-# lexploration
+# Lex-ploration
+## lexical exploration
