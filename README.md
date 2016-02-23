@@ -1,8 +1,10 @@
 # Lex-ploration: lexical exploration
 ## Requirements
 This program requires NLTK 3.0, NLTK data, and Python 2.7.
-To download NLTK go to http://www.nltk.org/install.html. Then install the required data here: http://www.nltk.org/data.html.
+To download the NLTK go to [nltk.org](http://www.nltk.org/install.html). Then install the required data [here](http://www.nltk.org/data.html).
 The specific packages required are 'gutenberg' and 'wordnet'.
+## Running Lexploration
+Run Lexploration by running lexploration.py with Python 2.7. This program requires user input, which will be explained in the **About** section below.
 
 ## About
 ###Aim of this program:
