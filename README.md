@@ -38,4 +38,5 @@ Because semantic disambiguation is an unsolved problem in NLP and the point of t
 ###Room for improvement:
 Allowing for user interaction with the word list would help identify words they're not interested in and allow them to refine their search if necessary.
 Currently, the user can manually edit the text file output by the lexplore.py program, but they have to be careful to preserve the ", " between each word in order to make sure each word is correctly searched for in the search.py of the program.
+
 The lexplore function could also be made more robust by adding verb- and adjective-specific semantic relationships to the keyword expansion function. Right now, best results are achieved by searching for nouns (which seem to be the most natural part of speech to search for as keywords).
