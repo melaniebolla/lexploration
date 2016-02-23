@@ -5,7 +5,12 @@ To download the NLTK, follow the instructions at [nltk.org/install.html](http://
 The specific data packages required are 'gutenberg' and 'wordnet'.
 
 ## Running Lexploration
-Run Lexploration by running lexploration.py with Python 2.7. This program requires user input, which will be explained in the **About** section below.
+### Starting Lexploration
+Run Lexploration by running lexploration.py with Python 2.7. 
+### Using Lexploration
+This program requires user input; the program will prompt the user to add a keyword. After adding a keyword, the user will be prompted to choose which definition of the keyword they meant. Once the definition is selected, the program uses that sense of the keyword to expand the keyword into a list of semantically related words. Next, the user is asked to go through the same process with a second keyword. After the second keyword is added, if the related words list is still shorter than 15 words, it will ask for another keyword. If the list has grown to more than 15 words (sometimes it will be much larger), the program moves on to finding more words related to the expanded word list. How this works will be explained in the **About** section below.
+
+After the related words list has been finalized, the program exports that list to a file for later reference. Then the search function reads in that list from the text file, searches a book from Project Gutenberg (right now it only searches 'Emma' by Jane Austen), and outputs any matches. The matches are output in order of appearance in the book, and are prefixed by an estimate of the percentage through the book at which they appear. The words found are displayed in UPPERCASE.
 
 ## About
 ###Aim of this program:
