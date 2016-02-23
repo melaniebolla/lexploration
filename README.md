@@ -14,7 +14,7 @@ Right now the scope is limited to searching the novel 'Emma' by Jane Austen, but
 The program uses the [WordNet](https://wordnet.princeton.edu/) NLTK package to expand keywords into lists of related words. These semantically related word lists are used as input to the search function, which outputs a text file of all sentences including those words.
 
 ###Motivation:
-English essays rely on analysis of a few well chosen quotes or scenes for the work to ilustrate the essay writer's point.
+English essays rely on analysis of a few well chosen quotes or scenes for the work to illustrate the essay writer's point.
 Finding these important quotes and scenes in the work can be challenging, even if a searchable, online version of the text can be found.
 
 For example, if you've decided to write a paper on the role of food in a novel, on your own you might come up with a list of words like "food", "drink", "meal", and "eating". This program allows the user to grow that list much larger in less time, because it provides a long list of words related in meaning to 'food', like 'petit four' and 'baked goods' and words like 'chomp' and 'savoring' for the word 'eating', which are not direct synonyms, but still closely related to the input words 'food' and 'eating'. It would be tedious for a person to search for lots of specific types of food, but it's easy for a computer.
@@ -24,7 +24,7 @@ One advantage of using this program to expand your search is that it tries to fi
 
 Another advantage over using a thesaurus is that it automatically adds words that aren't just synonyms of the word you searched for, but instead are related in a variety of ways to your word. Possible relationships include hypernymy, hyponymy, holonymy, and meronymy. You can read more about these relationships [here](https://en.wikipedia.org/wiki/WordNet#Database_contents).
 
-The search function of this program aggregates the search results for all words in a comma separated list, and only diplays each sentence of the book once, rather than returning the same quote every time for a different word if multiple words on your list happen to appear in the same sentence.
+The search function of this program aggregates the search results for all words in a comma separated list, and only displays each sentence of the book once, rather than returning the same quote every time for a different word if multiple words on your list happen to appear in the same sentence.
 This means that you can search a book for hundreds of words in a short amount of time.
 
 ###Limitations:
