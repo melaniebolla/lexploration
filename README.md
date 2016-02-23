@@ -27,9 +27,6 @@ Another advantage over using a thesaurus is that it automatically adds words tha
 The search function of this program aggregates the search results for all words in a comma separated list, and only diplays each sentence of the book once, rather than returning the same quote every time for a different word if multiple words on your list happen to appear in the same sentence.
 This means that you can search a book for hundreds of words in a short amount of time.
 
-###Example of usage:
-
-
 ###Limitations:
 Because semantic disambiguation is an unsolved problem in NLP and the point of this program is to expand searches rather than to refine them, this program does not try to distinguish different senses of a word in the text; instead, it returns all string-matched words (matching case and allowing for "title case", meaning the first letter of the word is capitalized). There are ways to improve the output, such as running a part-of-speech tagger over the words and only returning matches where the part-of-speech of the search term matches that of the target. This would eliminate spurious matches, but also introduces room for error, especially if the program is expanded to search over less-structured text.
 
