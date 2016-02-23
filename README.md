@@ -1,6 +1,5 @@
 # Lex-ploration: lexical exploration
 Aim of this program:
-
 The aim of this program is to facilitate the finding of relevant quotes on a specific topic.
 Right now the scope is limited to searching the novel 'Emma' by Jane Austen.
 The program uses WordNet, "a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations."
