@@ -1,9 +1,7 @@
-#!/usr/bin/python2.7
-from __future__ import division
-#Imprt the Gutenberg corpus from NLTK
-from nltk.corpus import gutenberg
 import os
 import time
+from __future__ import division
+from nltk.corpus import gutenberg
 
 sentence_total = len(gutenberg.sents('austen-emma.txt'))
 
@@ -73,9 +71,10 @@ def export_quotes(quotes):
         f.write('Quotes with approximate % through book. Words related to your topic appear in UPPERCASE.\n')
         f.write(q)
         f.close()
-        os.startfile(os.getcwd()+"\\"+filename)
+        cwd = str(os.getcwd())
         print("\nExporting list to file")
-        print("Opening 'quotelist.txt'. You can find 'quotelist.txt' in "+str(os.getcwd()))
+        print("Opening 'quotelist.txt'. You can find '"+filename+"' in "+cwd)
+        os.system("open "+cwd+r'/'+filename)
 
 def welcome():
     print("We're going to search Jane Austen's 'Emma' to find quotes that have words potentially related to your word cluster.")

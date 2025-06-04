@@ -22,7 +22,7 @@ def get_synset(given_keyword):
             definition_counter += 1
             question_for_user += str(definition_counter)+') ('+synset.pos()+'.) '+synset.definition()+'\n'
         question_for_user += '\nPlease input the number of the closest match:\n'
-        answer = raw_input(question_for_user)
+        answer = input(question_for_user)
         if answer[0] in [str(i) for i in range(10)] and int(answer) in range(1, len(synset_options)+1):
             correct_synset = synset_options[int(answer)-1]
             print("Added '"+keyword+"' sense "+answer+") to your list.\nSearching for related words to add to your word cluster...\n")
@@ -49,7 +49,7 @@ def just_orth():
 def get_related_words():
     """Adds words to the word list that are related in different ways in WordNet
     ."""
-    w = raw_input("\nAdd a word to your list:\t")
+    w = input("\nAdd a word to your list:\t")
     synset = get_synset(w)
     if synset:
         related_synsets = []
